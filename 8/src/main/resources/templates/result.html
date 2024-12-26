@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Result</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+
+
+        <div th:each="user: ${users}">
+        <div class="name"> <span>Name: <span th:text="${user.name}"></span></span></div>
+        <div class="lastname"> <span>Lastname: <span th:text="${user.lastName}"></span></span></div>
+        <div class="age"> <span>Age: <span th:text="${user.age}"></span></span></div>
+        <div class="season"> <span>Season: <span th:text="${user.season}"></span></span></div>
+        <div class="gadget"> <span>Gadget: <span th:text="${user.gadget}"></span></span></div>
+
+
+        </div>
+
+
+        </body>
+</html>
